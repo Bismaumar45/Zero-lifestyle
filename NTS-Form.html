@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTS Form</title>
+  <link rel="stylesheet" href="./NTS-Form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <form action="">
+
+    
+    <div class="form">
+      <div class="header">
+        <img src="https://portal.nts.org.pk/app-assets/images/pages/wb/3.png">
+      </div>
+      <div class="main">
+        <p>Candidate Portal</p>
+      </div>
+      <div class="col-1">
+        <div class="Name">
+          <label style="font-weight: normal; font-size: medium;">First Name*</label>
+          <i class="fa-regular fa-user"></i>
+          <input class="name" type="text" placeholder="First Name" value="" required>
+        </div>
+        <div class="Name">
+          <label style="font-weight: normal; font-size: medium;">Last Name*</label>
+          <i class="fa-regular fa-user"></i>
+          <input class="name" type="text" placeholder="Last Name" value="" required>
+        </div>
+      </div>
+    
+      <div class="country">
+        <label style="display: block; font-weight:bold;
+        margin-bottom:10px;">Select Option*</label>
+        <div style="display: block;" class="pak">
+        <input type="radio">
+        <label style="font-size: 17px;">Pakistani</label>
+        </div>
+        <input type="radio">
+        <label style="font-size: 17px;">Foreigner</label>
+      </div>
+      
+      <!-----------------------------------CNIC/B-FORM---------------------------------------- -->
+
+      <div class="Number">
+        <label style="display:inline;font-weight:bold;
+        margin-bottom:10px; margin-top:10px;">CNIC/B-Form</label>
+        <p class="CNIC">CNIC SHOULD BE WITHOUT DASHES</p>
+        <i class="fa-solid fa-passport"></i>
+        <input style="margin-bottom:5px ;" class="pass" type="text" placeholder="xxxxxxxxxxx" value="" required>
+      </div>
+      <p style="color: red; margin-top:0px;">*Note:</p>
+      <ul style="margin-left: 35px;width:90%;color:red;margin-bottom: 35px;">
+        <li>Please use your own CNIC number for registration.</li>
+        <li>Please make sure your CNIC is Correct.</li>
+        <li>CNIC,Phone Number and Email can not be changed after registration.</li>
+      </ul>
+      
+
+
+      <!--------------------------------MOBILE NUMBER------------------------------------------- -->
+      <div class="Number">
+        <label style="display: block;">Mobile Number</label>
+        <i class="fa-solid fa-phone-volume"></i>
+        <input style="margin-bottom:2px;" class="pass" type="tel" placeholder="03xxxxxxxxx" value="" required>
+      </div>
+      <p style="margin-bottom: 5px;">*Note:</p>
+      <ul style="margin-left: 35px;width:90%;color:red;margin-bottom: 35px;">
+        <li>Please make sure you have not blocked the Business/ unwanted SMS through PTA Instruction by Reg to 3627, if so please unblock by sending sms "Unreg" to 3627 in order to receive SMS alerts from NTS.</li>
+      </ul>
+
+      <!--------------------------------  EMAIL------------------------------------------- -->
+      <div class="Number">
+        <label style="display: block;">EMAIL*</label>
+        <input class="pass" type="email" placeholder="Email" value="" required>
+        <i class='fas fa-lock'></i>
+      </div>
+
+      <!--------------------------------  PASSWORD------------------------------------------- -->
+      <div class="Number">
+        <label style="display: block;">PASSWORD*</label>
+        <input class="pass" type="password" placeholder="Password" required>
+        <i class='fas fa-lock'></i>
+      </div>
+      
+      <!-------------------------------- CONFIRM PASSWORD------------------------------------------- -->
+      <div class="Number">
+        <label style="display: block;">CONFIRM PASSWORD*</label>
+        <input class="pass" type="password" placeholder="Password" value="" required>
+        <i class='fas fa-lock'></i>
+      </div>
+
+      <!-------------------------------- AGREE CHECKBOX--------------------------------------- -->
+      <div style="margin-bottom: 20px;">
+        <input type="checkbox" style="display: inline;">
+        <p style="display: inline;"> I agree to the <span style="color: blue;">Terms and Conditions.</span></p>
+      </div>
+
+      <!-------------------------------- SIGN UP BUTTON------------------------------------ -->
+      <button type="submit" class="btn-sign">SIGN UP <i class="fa-solid fa-arrow-right"></i></button>
+    
+    <!-------------------------------- FOOTER------------------------------------------- -->
+      <div class="footer">
+        Already Have an Account? <a href="https://portal.nts.org.pk/login">Sign in</a>
+      </div>
+    </div>
+</form>
+  
+  
+</body>
+</html>
